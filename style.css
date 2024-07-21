@@ -1,0 +1,121 @@
+/* Genel stil */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+
+.container {
+    background-color: #2c2c2c;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Başlık stil */
+h1 {
+    margin-bottom: 20px;
+    color: #f1c40f;
+}
+
+/* Arama kutusu stil */
+#searchInput {
+    width: calc(100% - 120px);
+    padding: 12px;
+    border: 2px solid #444;
+    border-radius: 8px;
+    background-color: #333;
+    color: #f1f1f1;
+    font-size: 16px;
+}
+
+#searchButton {
+    width: 100px;
+    padding: 12px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#searchButton:hover {
+    background-color: #2980b9;
+}
+
+/* Film sonuçları stil */
+#movieResults {
+    margin-top: 20px;
+}
+
+.movie {
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: left;
+    display: flex;
+    gap: 20px;
+}
+
+.movie img {
+    border-radius: 8px;
+    width: 150px;
+    height: auto;
+}
+
+.movie #movieDesc{
+    display: flex;
+    flex-direction: column;
+}
+
+.movie #movieDesc h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #f1c40f;
+}
+
+.movie #movieDesc p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    #searchInput {
+        width: calc(100% - 100px);
+    }
+
+    #searchButton {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .movie #movieDesc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie img {
+        width: 100%;
+    }
+}
